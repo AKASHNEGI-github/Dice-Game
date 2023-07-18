@@ -1,2 +1,2 @@
 # Dice-Game
-web Development Mini Project using HTML CSS JS
+Web Development Mini Project using HTML CSS JS
