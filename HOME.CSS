@@ -1,0 +1,63 @@
+body
+{
+    text-align: center;
+}
+
+h1
+{
+    padding-top: 1%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #7500a7;
+}
+
+.dice
+{
+    padding: 4%;
+    display: inline-block;
+}
+
+h2
+{
+    padding-bottom: 3%;
+}
+
+img
+{
+    width: 250px;
+}
+
+.play
+{
+    background-color: green;
+    color: white;
+}
+
+.play:hover
+{
+    background-color: green;
+    color: white;
+}
+
+.quit
+{
+    background-color: red;
+    color: white;
+    visibility: hidden;
+}
+
+.quit:hover
+{
+    background-color: red;
+    color: white;
+}
+
+.footer
+{
+    padding-top: 1%;
+}
+
+.akashnegi
+{
+    text-decoration: underline;
+}
