@@ -1,6 +1,3 @@
-const countp1=document.querySelector(".p1score");
-const countp2=document.querySelector(".p2score");
-
 document.querySelector(".play").addEventListener("click" , function()
 {
     var diceRollSound = new Audio("sounds/Dice-roll-sound.mp3");
@@ -19,14 +16,10 @@ document.querySelector(".play").addEventListener("click" , function()
     if(randomNumber1 > randomNumber2)
     {
         document.querySelector("h1").innerHTML = "🚩 Player 1 Wins !";
-        countp1=countp1+1;
-        document.querySelector(".p1score").innerHTML = countp1;
     }
     else if(randomNumber2 > randomNumber1)
     {
         document.querySelector("h1").innerHTML = "Player 2 Wins ! 🚩";
-        countp2++;
-        document.querySelector(".p2score").innerHTML = countp2;
     }
     else
     {
