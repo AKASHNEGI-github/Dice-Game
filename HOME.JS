@@ -1,0 +1,38 @@
+const countp1=document.querySelector(".p1score");
+const countp2=document.querySelector(".p2score");
+
+document.querySelector(".play").addEventListener("click" , function()
+{
+    var diceRollSound = new Audio("sounds/Dice-roll-sound.mp3");
+    diceRollSound.play();
+
+    var randomNumber1 = Math.floor(Math.random() * 6) + 1; 
+    var randomImageSrc1 = "images/dice" + randomNumber1 + ".png";
+    var image1 = document.querySelectorAll("img")[0];
+    image1.setAttribute("src" , randomImageSrc1);
+
+    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+    var randomImageSrc2 = "images/dice" + randomNumber2 + ".png";
+    var image2 = document.querySelectorAll("img")[1];
+    image2.setAttribute("src" , randomImageSrc2);
+
+    if(randomNumber1 > randomNumber2)
+    {
+        document.querySelector("h1").innerHTML = "🚩 Player 1 Wins !";
+        countp1=countp1+1;
+        document.querySelector(".p1score").innerHTML = countp1;
+    }
+    else if(randomNumber2 > randomNumber1)
+    {
+        document.querySelector("h1").innerHTML = "Player 2 Wins ! 🚩";
+        countp2++;
+        document.querySelector(".p2score").innerHTML = countp2;
+    }
+    else
+    {
+        document.querySelector("h1").innerHTML = "! Draw !";
+    }
+
+    var activeQuitButton = document.querySelector(".quit");
+    activeQuitButton.style.visibility = "visible";
+});
